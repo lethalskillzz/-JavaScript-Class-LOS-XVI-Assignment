@@ -1,3 +1,8 @@
+/** JavaScript-Class-LOS-XVI-Assignment
+Javascript Class assingment for Andela Bootcamp XVI 
+Author: Lethalskillzz@gmail.com **/
+
+
 function  NotesApplication(author) {
   
   //Inner properties author and notes 

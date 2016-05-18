@@ -2,7 +2,6 @@
 Javascript Class assingment for Andela Bootcamp XVI 
 Author: Lethalskillzz@gmail.com **/
 
-
 function  NotesApplication(author) {
   
   //Inner properties author and notes 
@@ -20,7 +19,7 @@ function  NotesApplication(author) {
   this.listNotes = function() {
        for(var i = 0; i<this.notes.length; i++) {
            console.log("Note ID: "+i+"\n");
-           console.log(this.notes[i]+"\n\n" );
+           console.log(this.notes[i]+"\n\n\n" );
            console.log("By Author "+this.author+"\n");
     }
   }
@@ -43,7 +42,7 @@ function  NotesApplication(author) {
              console.log("Showing results for search"+search_text+"\n\n");
              if(search_text === this.notes[i] ) {
                 console.log("Note ID: "+i+"\n");
-                console.log(this.notes[i]+"\n\n" );
+                console.log(this.notes[i]+"\n\n\n" );
                 console.log("By Author "+this.author+"\n");
                 return this.notes[i];
              }
@@ -70,6 +69,14 @@ function  NotesApplication(author) {
          }
 
   }
+
+
+/*var n = new NotesApplication("Lethalskillzz");
+n.create("This is my 1st Note Content");
+n.create("This is my 2nd Note Content");
+n.listNotes();
+n.get(0);
+n.get(1);*/
 
   
 }

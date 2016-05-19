@@ -65,18 +65,10 @@ describe("NotesApplication delete", function() {
       NotesApplication.delete(0);
       expect(typeof NotesApplication.delete.calls.argsFor(0)[0]).toEqual("number");
   });
-
+ 
 }); 
 
-/*describe("NotesApplication delete", function() {
-`
-  it("arg0 note_id should be a type number", function() {
-    spyOn(NotesApplication, 'delete');
-    NotesApplication.delete(0);
-    expect(typeof NotesApplication.delete.calls.argsFor(0)[0]).toEqual("number");
-  });
 
-}); */
 
 
 describe("NotesApplication edit", function() {

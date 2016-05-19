@@ -34,7 +34,7 @@ describe("NotesApplication create", function() {
 
 describe("NotesApplication get", function() {
 
-  it("arg0(note_id) should be a type number", function() {
+  it("arg0 note_id should be a type number", function() {
      spyOn(NotesApplication, 'get');
      NotesApplication.get(0);
      expect(typeof NotesApplication.get.calls.argsFor(0)[0]).toEqual("number");
@@ -44,12 +44,12 @@ describe("NotesApplication get", function() {
     expect(NotesApplication.get(0)).toEqual("note");
   });
 
-});
+}); 
 
 
 describe("NotesApplication search", function() {
 
-  it("arg0(search_text) should be a string", function() {
+  it("arg0 search_text should be a type of string", function() {
       spyOn(NotesApplication, 'search');
       NotesApplication.search("note");
       expect(typeof NotesApplication.search.calls.argsFor(0)[0]).toEqual("string");
@@ -58,21 +58,32 @@ describe("NotesApplication search", function() {
 });
  
 
-describe("NotesApplication delete", function() {
+/*describe("NotesApplication delete", function() {
 `
-  it("arg0(note_id) should be a type number", function() {
+  it("arg0 note_id should be a type number", function() {
     spyOn(NotesApplication, 'delete');
     NotesApplication.delete(0);
     expect(typeof NotesApplication.delete.calls.argsFor(0)[0]).toEqual("number");
   });
 
-}); 
+}); */
 
 
 describe("NotesApplication edit", function() {
 
-  it("should be able to replace the content in the note", function() {
-    expect(NotesApplication.edit()).toEqual(1);
+  it("arg0 note_id should be a type number", function() {
+     spyOn(NotesApplication, 'edit');
+     NotesApplication.edit(0,"note");
+     expect(typeof NotesApplication.edit.calls.argsFor(0)[0]).toEqual("number");
+  }); 
+
+
+  it("arg1 new_content should be a type string", function() {
+     spyOn(NotesApplication, 'edit');
+     NotesApplication.edit(0,"note");
+     expect(typeof NotesApplication.edit.calls.argsFor(0)[1]).toEqual("string");
   }); 
 
 });
+
+

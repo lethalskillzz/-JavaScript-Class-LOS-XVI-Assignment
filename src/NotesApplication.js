@@ -28,7 +28,7 @@ function  NotesApplication(author) {
   //This function takes a note_id which refers to the index of the 
   //note in the notes list and returns the content of that note as a string.
   this.get = function (note_id) {
-       for(var i = 0; i<this.notes.length; i++) {
+       for(var i=0; i<=this.notes.length; i++) {
            if(note_id == i ) {
               return this.notes[i];
           }
@@ -44,7 +44,7 @@ function  NotesApplication(author) {
                 console.log("Note ID: "+i+"\n");
                 console.log(this.notes[i]+"\n\n\n" );
                 console.log("By Author "+this.author+"\n");
-                return this.notes[i];
+                //return this.notes[i];
              }
          }
   }
@@ -53,7 +53,7 @@ function  NotesApplication(author) {
   //This function deletes the note at the index note_id of the notes list.
   this.delete = function(note_id) {
          for(var i = 0; i<this.notes.length; i++) {
-             if(note_id == i ) {
+             if(note_id === i ) {
                 delete this.notes[i];
             }
          }
@@ -63,7 +63,7 @@ function  NotesApplication(author) {
   //This function replaces the content in the note at note_id with new_content.
   this.edit = function(note_id, new_content) {
          for(var i = 0; i<this.notes.length; i++) {
-             if(note_id == i ) {
+             if(note_id === i ) {
                 this.notes[i] = new_content;
             }
          }

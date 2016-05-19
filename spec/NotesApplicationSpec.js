@@ -11,10 +11,6 @@
 
 describe("NotesApplication create", function() {
 
-  /*it("note c should be able to create note", function() {
-    expect(NotesApplication.notes).toContain("note");
-  });*/
-
 
   it("should be able to create note", function() {
     expect(NotesApplication.notes).toContain("note");

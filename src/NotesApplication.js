@@ -30,6 +30,7 @@ function  NotesApplication(author) {
   this.get = function (note_id) {
        for(var i=0; i<=this.notes.length; i++) {
            if(note_id == i ) {
+
               return this.notes[i];
           }
        }
@@ -44,6 +45,7 @@ function  NotesApplication(author) {
                 console.log("Note ID: "+i+"\n");
                 console.log(this.notes[i]+"\n\n\n" );
                 console.log("By Author "+this.author+"\n");
+                
                 //return this.notes[i];
              }
          }

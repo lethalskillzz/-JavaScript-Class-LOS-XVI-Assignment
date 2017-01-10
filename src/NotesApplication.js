@@ -33,7 +33,7 @@ function  NotesApplication(author) {
 
               return this.notes[i];
           }
-       }
+       }   
     }
 
 
